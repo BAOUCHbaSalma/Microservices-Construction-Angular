@@ -1,0 +1,25 @@
+<form [formGroup]="loginForm" (ngSubmit)="loginMethod()">
+    <div class="logo">
+    </div>
+  
+    <div class="group">
+  
+        <h1>Connecter</h1>
+  
+        <div class="group-login">
+            <input type="text"placeholder="Entrer votre nom..." formControlName="username" id="username">
+        </div>
+  
+        <div class="group-login">
+            <input type="password" placeholder="Entrer votre mot de passe..." formControlName="password" id="password">
+        </div>
+  
+        <div class="group-login">
+            <a href="#">Mot de passe oublié?</a><br>
+            <button type="submit">Connecter</button>
+  
+            <h2>Vous n’avez pas de compte ? <a [routerLink]="['/registre']">Creer Compte</a></h2>
+        </div>
+    </div>
+  
+  </form>
